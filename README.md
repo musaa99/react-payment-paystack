@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Getting Started with Paystack and React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository includes a sample application that shows how to integrate Paystack payments to your React apps.
 
-## Available Scripts
+The sample app is a simple checkout form to purchase an item and check out using the [Paystack Popup](https://paystack.com/docs/payments/accept-payments/#popup) checkout. It uses [iamraphson's](https://github.com/iamraphson) [react-paystack](https://github.com/iamraphson/react-paystack) library.
 
-In the project directory, you can run:
+The library offers 3 integration methods:
+- [Using hooks](https://github.com/iamraphson/react-paystack#1-using-the-paystack-hook)
+- [Using a `<PaystackButton/>` component](https://github.com/iamraphson/react-paystack#2-using-the-paystack-button)
+- [Using the Context API](https://github.com/iamraphson/react-paystack#3-using-the-paystack-consumer)
 
-### `npm start`
+This sample uses the `<PaystackButton/>` component, but you can swap it out for any of the other methods. All 3 methods will bear the same results
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Demo
 
-### `npm test`
+View a live demo of the app [here](https://react-paystack-guide.netlify.app/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Get Started
 
-### `npm run build`
+1. Clone this repo:
+```
+git clone https://github.com/PaystackOSS/sample-react.git
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate to the root directory and install dependencies
+```
+cd sample-react
+yarn install
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Rename the `.env.example` file to `.env` and add your Paystack public key:
 
-### `npm run eject`
+```
+REACT_APP_PAYSTACK_PUBLIC_KEY=pk_domain_xxxxxx
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Start the application
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. Visit http://localhost:3000 in your browser, if React doesn't automatically open it for you. You should now see your checkout form, and be able to make a purchase.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+**Note**: This is a simple client-side integration, that uses a callback to perform post-payment logic. For a more stable, robust solution, you should use webhooks to listen for transaction success and perform any post-payment logic on your server.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Contributing
+If you notice any issues with this app, please [open an issue](https://github.com/PaystackOSS/sample-react/issues/new). PRs are also more than welcome, so feel free to [submit a PR](https://github.com/PaystackOSS/sample-react/compare) to fix an issue, or add a new feature!
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
 
-### Code Splitting
+This repository is made available under the MIT license. Read [LICENSE.md](https://github.com/PaystackOSS/sample-react/blob/master/LICENSE.md) for more information.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
