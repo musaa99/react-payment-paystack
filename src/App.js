@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import Paystack from "./components/Paystack";
+import Body from "./Main/Body";
+// import Cart from "./pages/cart";
+
+// import Home from "./Payment/Home";
+// import Pay from "./Payment/Pay";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Body />,
+     
+     
+    },
+    {
+      path: "/paystack",
+      element: <Paystack />,
+     
+     
+    },
+   
+    
+  ]);
+  return <RouterProvider router={router} />;
 }
 
 export default App;
+
+
