@@ -14,7 +14,7 @@ This sample uses the `<PaystackButton/>` component, but you can swap it out for 
 
 ## Demo
 
-View a live demo of the app [here]()
+View a live demo of the app [here](https://musa-paystack-integration.vercel.app/)
 
 ## Get Started
 
