@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="">
       <div className="grid grid-cols-2 ">
-        <h2 className="text-[red]"> Musa OnlineShop</h2>
+        <h2 className="text-[blue] text-4xl"> Musa OnlineShop</h2>
 
         <div className="flex items-center" to="/cart">
           <svg
