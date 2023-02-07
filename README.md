@@ -14,7 +14,7 @@ This sample uses the `<PaystackButton/>` component, but you can swap it out for 
 
 ## Demo
 
-View a live demo of the app [here](https://react-paystack-guide.netlify.app/)
+View a live demo of the app [here]()
 
 ## Get Started
 
