@@ -3,8 +3,8 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="">
-      <div className="grid grid-cols-2 ">
-        <h2 className="text-[blue] text-4xl"> Musa OnlineShop</h2>
+      <div className="md:grid md:grid-cols-2 flex justify-between ">
+        <h2 className="text-[blue] text-2xl md:text-4xl"> Musa OnlineShop</h2>
 
         <div className="flex items-center" to="/cart">
           <svg
