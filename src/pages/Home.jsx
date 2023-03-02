@@ -7,17 +7,17 @@ const Home = () => {
   const navigate = useNavigate();
 
   return (
-    <>
-    <div className='mx-auto  m-[4rem] mb-4 w-[70%] '>
+    <div className=''>
+    <div className='mx-auto m-[4rem] mb-4 w-[full] md:w-[70%] '>
     <Navbar/>
 
     </div>
-      <div className='mx-auto bg-white p-[4rem] w-[70%] flex justify-between'>
+      <div className='mx-auto  p-[4rem] w-[70%] md:flex grid gap-4 justify-between'>
 
         <Button text='View Products' onClick={()=> navigate('/products')} />
         <Button text='View Transactions' onClick={()=> navigate('/transactions')} />
       </div>
-    </>
+    </div>
   )
 }
 
