@@ -4,7 +4,7 @@ const Navbar = () => {
   return (
     <div className="">
       <div className=" flex justify-evenly  ">
-        <h2 className="text-[blue] text-2xl md:text-4xl"> Musa OnlineShop</h2>
+        <h2 className="text-[red] font-bold text-4xl md:text-4xl"> Musa OnlineShop</h2>
 
         <div className="flex items-center" to="/cart">
           <svg
