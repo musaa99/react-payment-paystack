@@ -12,7 +12,7 @@ const Home = () => {
     <Navbar/>
 
     </div>
-      <div className='grid gap-4 justify-center m-4  '>
+      <div className='grid gap-6 justify-center m-4  '>
 
         <Button text='View Products' onClick={()=> navigate('/products')} />
         <Button text='View Transactions' onClick={()=> navigate('/transactions')} />
