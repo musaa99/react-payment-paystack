@@ -3,7 +3,7 @@ import React from "react";
 const Navbar = () => {
   return (
     <div className="">
-      <div className=" flex justify-around md:grid md:grid-cols-2 lg:flex lg:justify-between ">
+      <div className=" flex justify-evenly  ">
         <h2 className="text-[blue] text-2xl md:text-4xl"> Musa OnlineShop</h2>
 
         <div className="flex items-center" to="/cart">

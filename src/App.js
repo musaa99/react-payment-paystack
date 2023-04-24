@@ -7,7 +7,7 @@ import Home from './pages/Home';
 
 const App = () => {
   return (
-    <div className=' p-[2rem]'>
+    <div className=' p-[30px]'>
       <Routes>
         <Route path={'/products'} element={<Products />} />
         <Route path={'/*'} element={<Home />} />
