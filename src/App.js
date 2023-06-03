@@ -1,13 +1,12 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
 import Products from './pages/Products';
 import Transactions from './pages/Transactions';
 import Home from './pages/Home';
 
 const App = () => {
   return (
-    <div className=' p-[30px]'>
+    <div className='hero-img'>
       <Routes>
         <Route path={'/products'} element={<Products />} />
         <Route path={'/*'} element={<Home />} />

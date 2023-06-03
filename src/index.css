@@ -9,12 +9,34 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background-color: #f0f3ef; */
-  background-image: url("./assets/img.jpg");
+  background-color: aqua;
+  height: auto;
+  width: auto;
+   background-image: url("./assets/img.jpg"); 
 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    /* background-image: url("./assets/img.jpg"); */
+    /* height: 100%; */
+    /* background-position: center; */
+    background-color: aqua;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    /* position: relative; */
+  }
+}
+@media (max-width: 425px){
+  body {
+    background-color: aqua;
+    /* background-image: none; */
+    height: fit-content;
+    width: 5px;
+  }
 }
